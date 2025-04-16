@@ -1,0 +1,347 @@
+
+body {
+    color: #595959;
+    font-family: 'Sanchez', serif;
+  }
+ 
+ a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+ }
+ 
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ h2, h3 {
+  color: #000;
+ }
+ 
+  #main-nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px;
+  }
+ 
+  #main-nav input, #burger-con {
+    display: none;
+  }
+ 
+  #main-nav input:checked ~ #burger-con {
+    display: block;
+  }
+ 
+  #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+  }
+ 
+  #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+  }
+ 
+  #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+  }
+ 
+  #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+  }
+ 
+  #main-nav ul li:last-child {
+    margin-bottom: 40px;
+  }
+ 
+  #logo {
+    margin-bottom: 20px;
+    max-width: 382px;
+  }
+ 
+  #hero {
+    background: url(../images/headercr.jpg) no-repeat;
+    height: 200px;
+  }
+ 
+  .book-now {
+    background-color: #B41C1C;
+    color: #fff;
+    font-size: 16px;
+    transition: all 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+  }
+ 
+  .book-now:hover {
+    background-color: rgb(196, 28, 28);
+  }
+ 
+  #book-now-hero {
+    height: 67px;
+  }
+ 
+  #hero-heading-box {
+    align-self: end;
+  }
+ 
+  .hero-img-h2 {
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+ 
+  .hero-img-h2 span {
+    color: #B41C1C;
+    font-size: 12px;
+  }
+ 
+  .line-separator {
+    margin-top: 20px;
+    border-top: solid 3px #CF6666;
+    padding-top: 20px;
+  }
+ 
+  
+  #hero-summary p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .details details{
+    padding: 10px; 
+  }
+  
+ .details summary {
+    background-color: #B41C1C;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+
+ .details p {
+    padding-top: 15px;
+
+  }
+
+  #main_title {
+    margin: 20px;
+  }
+
+  #Activities_list ul {
+    padding-left: 0px;
+
+  }
+
+  #Activities_list li {
+    margin: 10px;
+    list-style-type: none;
+    font-size: 1.2rem;
+  }
+
+  .divider {
+    height: 4px;
+    background-color: #B41C1C;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+
+  #hero1 {
+    background: url(../images/pexels-photo-1174958.jpeg) no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
+
+  #hero-heading-box1 {
+    align-self: end;
+  }
+ 
+  .hero-img-h2_1 {
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+ 
+  .hero-img-h2_1 span {
+    color: #B41C1C;
+    font-size: 12px;
+  }
+
+  .divider2 {
+    height: 4px;
+    background-color: #B41C1C;
+    width: 100%;
+    margin: 0;
+  }
+
+  #about_text h2 {
+    margin: 20px;
+  }
+
+  #about_text1 h2 {
+    margin: 20px;
+  }
+ 
+  .hero-img-h2_2 {
+    background-color: #B41C1C;
+    padding: 10px;
+    border-radius: 4%;
+    text-align: center;
+    color: #fff;
+  }
+ 
+  #section-title {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+ .activities-section {
+    background-image: url("../images/pexels-katerina-holmes-05911280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 30px 15px;
+    color: white;
+    text-align: center;
+  }
+  
+
+  .section-title {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: left;
+  }
+  
+  .activities-type-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .activities-type-list li {
+    background-color: #B41C1C;
+    color: white;
+    padding: 10px;
+    border-bottom: 3px solid black;
+    text-align: left;
+  }
+  
+  .features-list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+  }
+
+  #hero2 {
+    background: url(../images/pexels-szafran-17742064.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
+
+  #hero-heading-box2 {
+    align-self: end;
+  }
+ 
+  .hero-img-h2_3 {
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+ 
+  .hero-img-h2_3 span {
+    color: #B41C1C;
+    font-size: 12px;
+  }
+
+  #fishing  {
+    padding: 10px;
+    background: url(../images/pexels-heiner-56542-205002.jpg) no-repeat;
+    background-size: cover;
+   
+  }
+
+  #fishing p {
+    padding: 10px;
+    color: #fff;
+  }
+
+  .divider3 {
+    height: 40px;
+    background-color: #B41C1C;
+    width: 100%;
+    margin: 0;
+  }
+
+  #fishing2 h2 {
+    margin: 20px; 
+    text-align: center;
+  }
+
+  #fishing2 p {
+    padding: 10px;
+  }
+
+  .image-container {
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .couple {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+ 
+   #footer-hero {
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  #footer-hero h3 {
+    margin-top: 30px;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  #footer-privacy .line-separator {
+    margin-top: 0px;
+  }
+
+  #footer-contact-info h3 {
+    font-size: 23px;
+    color: #fff;
+  }
+
+  #footer-contact-info p {
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 11px;
+  }
