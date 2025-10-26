@@ -38,50 +38,6 @@ html {
     margin: 10px 0px;
 }
 
-.boxnav {
-    background-color: rgb(78, 81, 85);
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    text-align: end;
-    margin: 10px 0px;
-}
-
-.box1 {
-    background-color: rgb(78, 81, 85);
-    color: rgb(255, 255, 255);
-    padding: 135px;
-    text-align: center;
-    margin: 10px 0px;
-    height: 300px;
-}
-
-.box2 {
-    background-color: rgb(78, 81, 85);
-    color: rgb(255, 255, 255);
-    padding: 90px;
-    text-align: center;
-    margin: 10px 0px;
-    height: 200px;
-}
-
-.box3 {
-    background-color: rgb(78, 81, 85);
-    color: rgb(255, 255, 255);
-    padding: 80px;
-    text-align: center;
-    margin: 10px 0px;
-    height: 180px;
-}
-
-.box4 {
-    background-color: rgb(78, 81, 85);
-    color: rgb(255, 255, 255);
-    padding: 55px;
-    text-align: center;
-    margin: 10px 0px;
-    height: 140px;
-}
-
 /* 1. --- END General Styles --- */
 
 /* 2. --- Mobile Grid --- */
