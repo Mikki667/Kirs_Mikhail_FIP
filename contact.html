@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome to my portfolio!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <h1 class="hidden">Welcome to my portfolio!</h1>
+            <header>
+                <h2 class="hidden">main header</h2>
+                <section class="grid-con">
+                    <div class="col-span-3 m-col-span-3 l-col-span-3">
+                        <h2>Michael Kirs</h2>
+                    </div>
+                    <nav class="col-span-5 m-col-span-8 l-col-span-8 desktop-nav">
+                        <ul class="main-nav">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#projects">The Projects</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="col-span-1 m-col-span-1 l-col-span-1">
+                        <button id="hamburger">&#9776;</button>
+                    </div>
+                </section>
+            </header>
+
+            <div id="menu" class="overlay">
+                <button id="close">&times;</button>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">The Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+    <main>
+      <div class="contact-content">
+        <h2 class="hidden">Contact form!</h2>
+        <form class="grid-con contact-box">
+          <h2 class="col-span-full m-col-span-12 l-col-span-12 xl-col-span-12">Contact Us</h2>
+          <label for="name" class="col-span-full m-col-span-12 l-col-span-6 xl-col-span-4">Name:</label>
+          <input type="text" id="name" name="name" required class="col-span-full m-col-span-12 l-col-span-12 xl-col-span-12" />
+          <label for="email" class="col-span-full m-col-span-12 l-col-span-6 xl-col-span-4">Email:</label>
+          <input type="email" id="email" name="email" required class="col-span-full m-col-span-12 l-col-span-12 xl-col-span-12" />
+          <label for="message" class="col-span-full m-col-span-12 l-col-span-12 xl-col-span-12">Message:</label>
+          <textarea id="message" name="message" rows="5" required class="col-span-full m-col-span-12 l-col-span-12 xl-col-span-12"></textarea>
+          <button type="submit" class="col-span-full m-col-span-12 l-col-span-12 xl-col-span-12">Send Message</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <h2 class="hidden">footer</h2>
+        <section class="grid-con">
+          <div class="l-col-span-3 l-col-start-10 m-col-span-3 m-col-start-10 col-span-4 xl-col-span-3 xl-col-start-10">
+            <h2 class="hidden">Social Media</h2>
+            <div class="social-icons">
+              <a href="https://www.twitter.com" target="blank">
+                <img src="images/twitter.png" alt="Twitter" class="social-icon">
+              </a>
+              <a href="https://www.instagram.com" target="blank">
+                <img src="images/instagram.png" alt="Instagram" class="social-icon">
+              </a>
+              <a href="https://www.youtube.com/" target="blank">
+                <img src="images/youtube.png" alt="Youtube" class="social-icon">
+              </a>
+              <a href="" target="blank">
+                <img src="images" alt="Github" class="social-icon">
+              </a>
+            </div> 
+          </div>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
