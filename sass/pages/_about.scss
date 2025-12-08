@@ -1,0 +1,82 @@
+.section-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.about-text, .skills-text {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.about-image-box, .skills-image-box {
+    background-color: #9b00ff22;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 90%;
+    max-width: 280px;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+.about-img:hover {
+    transform: scale(1.08);
+}
+
+.project-button-wrap {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.project-button {
+    display: inline-block;
+    background-color: #9b00ff;
+    padding: 18px 35px;
+    border-radius: 15px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-button:hover {
+    background-color: #7c00cc;
+    transform: scale(1.03);
+}
+
+@media (max-width: 767px) {
+
+    .about-wrapper {
+        display: block;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto 20px auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .about-text p {
+        white-space: normal;
+        line-height: 1.5;
+    }
+
+    .about-image:hover {
+        transform: none;
+    }
+}

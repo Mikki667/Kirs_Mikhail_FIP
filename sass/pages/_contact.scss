@@ -59,3 +59,62 @@
 .contact-box button:hover {
   background-color: #f2f2f2;
 }
+
+.contact-extra {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.social-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-row {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.github-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.github-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.github-btn {
+    background-color: #9b00ff;
+    color: #ffffff;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.github-btn:hover {
+    background-color: #ff00d0;
+}
+
+@media (max-width: 767px) {
+
+    .social-row {
+        gap: 25px;
+    }
+
+    .github-btn {
+        width: 70%;
+        max-width: 260px;
+    }
+}
