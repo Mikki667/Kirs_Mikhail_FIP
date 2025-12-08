@@ -1,0 +1,39 @@
+.intro {
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.intro-title {
+    font-size: 34px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.intro-subtext {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.intro-video-wrap {
+    width: 75%;      
+    margin: 0 auto;  
+}
+
+.intro-video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+    .intro-video {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro-video-wrap {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
