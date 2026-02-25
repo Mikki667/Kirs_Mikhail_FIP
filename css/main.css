@@ -719,4 +719,157 @@ footer.footer {
   .project-goal-text {
     padding: 0 20px;
   }
+}
+.beats-section {
+  padding: 45px 0;
+}
+
+/* Intro container */
+.beats-intro-box {
+  background-color: rgba(155, 0, 255, 0.13);
+  border-radius: 35px;
+  padding: 34px;
+  margin: 10px 0 45px;
+  border: 2px solid rgba(155, 0, 255, 0.18);
+}
+
+/* Photo frame */
+.beats-photo-box {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 26px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beats-photo {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+/* Text */
+.beats-intro-text {
+  padding-left: 28px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.beats-intro-text p {
+  margin: 0 0 14px;
+}
+
+.beats-intro-title {
+  margin: 0 0 14px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+/* Ableton screenshot */
+.beats-work-box {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.beats-work-img {
+  width: 100%;
+  max-width: 820px;
+  border-radius: 22px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 12px;
+  border: 2px solid rgba(155, 0, 255, 0.18);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Beats title */
+.beats-grid-title {
+  text-align: center;
+  margin: 0 0 22px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Beat cards */
+.beat-card {
+  background-color: rgba(155, 0, 255, 0.13);
+  border-radius: 28px;
+  padding: 24px 22px;
+  margin-top: 20px;
+  text-align: center;
+  border: 2px solid rgba(155, 0, 255, 0.18);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.22s ease;
+}
+
+.beat-card:hover {
+  transform: scale(1.02);
+}
+
+.beat-title {
+  margin: 0 0 14px;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+/* Audio player */
+.beat-audio {
+  width: 100%;
+}
+
+/* Beat cover */
+.beat-cover {
+  margin-top: 18px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 22px;
+  padding: 14px;
+  border: 2px solid rgba(155, 0, 255, 0.18);
+}
+
+.beat-cover-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.22s ease;
+}
+
+.beat-cover-img:hover {
+  transform: scale(1.02);
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .beats-intro-box {
+    padding: 22px;
+    border-radius: 28px;
+  }
+  .beats-photo-box,
+  .beats-intro-text {
+    grid-column: 1/-1;
+  }
+  .beats-intro-text {
+    padding-left: 0;
+    margin-top: 18px;
+  }
+  .beats-intro-title {
+    text-align: center;
+    font-size: 20px;
+  }
+  /* Hide Ableton screenshot on mobile */
+  .beats-work-box {
+    display: none;
+  }
+  .beat-cover {
+    padding: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
