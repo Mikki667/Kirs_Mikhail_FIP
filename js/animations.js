@@ -1,6 +1,4 @@
-(() => {
-
-  console.log('IIFE called for gsap animations');
+export function animations() {
 
   // variables
 
@@ -267,4 +265,4 @@
 
   initScrollAnimations();
 
-})();
+}
