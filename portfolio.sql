@@ -3,15 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 03, 2025 at 06:39 AM
+-- Generation Time: Feb 27, 2026 at 09:04 PM
 -- Server version: 9.1.0
 -- PHP Version: 8.3.14
 
--- NOTE:
--- I tried to connect the tables in phpMyAdmin,
--- but the software wouldn’t let me create the foreign key links.
--- Thank you.
-
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -24,6 +20,22 @@ SET time_zone = "+00:00";
 --
 -- Database: `portfolio`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_messages`
+--
+
+DROP TABLE IF EXISTS `contact_messages`;
+CREATE TABLE IF NOT EXISTS `contact_messages` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(190) NOT NULL,
+  `message` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf16;
 
 -- --------------------------------------------------------
 
