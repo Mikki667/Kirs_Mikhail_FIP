@@ -1,5 +1,7 @@
 <?php
 
+die("PROCESS FILE IS RUNNING");
+
 require_once "connect.php";
 
 function cleanValue($value) {
