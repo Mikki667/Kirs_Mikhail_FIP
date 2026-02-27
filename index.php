@@ -375,7 +375,23 @@
 
         <div id="contact" class="contact-content">
             <h2 class="hidden">Contact form!</h2>
-            <form class="grid-con contact-box">
+            <?php
+                if (isset($_GET["status"])) 
+                    {
+                        if ($_GET["status"] === "success") {
+                            echo "<p>Your message was sent. Thank you!</p>";
+                        }
+
+                        if ($_GET["status"] === "empty") {
+                            echo "<p>Please fill in all fields.</p>";
+                        }
+
+                        if ($_GET["status"] === "bademail") {
+                            echo "<p>Please enter a valid email.</p>";
+                        }
+                    }
+            ?>
+            <form class="grid-con contact-box" method="post" action="includes/contact-process.php">
                 <h2 class="col-span-full m-col-span-12 l-col-span-12 xl-col-span-12">Contact Us</h2>
 
                 <label for="name" class="col-span-full m-col-span-12 l-col-span-6 xl-col-span-4">Name:</label>
