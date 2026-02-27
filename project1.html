@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1 - Michael Kirs</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
@@ -23,10 +30,10 @@
             <nav class="col-span-4 m-col-span-4 l-col-span-4 desktop-nav">
                 <h2 class="hidden">desktop-nav</h2>
                 <ul class="main-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="theprojects.html">The Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">The Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
 
@@ -50,10 +57,10 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="theprojects.html">The Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">The Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
 
@@ -100,25 +107,33 @@
                 </div>
 
                 <div class="col-span-8 m-col-span-8 l-col-span-8 project-about-text">
-                    <p>Now, under the leadership of CEO Mikhail Kirs, Squeezit is blasting back into the spotlight with
-                        an entirely new identity.
-                        This isn’t just a revival—it’s a complete reimagining of the brand for a new generation.
-                        The new era draws inspiration from childhood wonder, science fiction, and the thrill of
-                        discovery,
-                        with bottles designed to look like flying saucers and alien mascots that give every flavor its
-                        own playful personality and story.
-                        Every squeeze is meant to feel like opening a tiny adventure, combining taste with imagination
-                        in a way that goes beyond ordinary juice.
-                        Launching with six exciting flavors—grape, strawberry, orange, and more—each bottle doubles as a
-                        collectible,
-                        making Squeezit not just a drink, but a fun experience to share, trade, and enjoy. The mission
-                        is simple:
-                        bring back the excitement, the color, and the unforgettable taste of Squeezit—while adding a
-                        dash of mystery, fun, and adventure that kids and adults alike can explore.
-                        Squeezit has landed, and it’s ready to capture imaginations all over again.</p>
+                    <p>
+                        Squeezit is a full brand revival project that I developed entirely from scratch.
+                        The objective was to redesign a nostalgic juice brand and transform it into a modern, visually
+                        engaging identity supported by a responsive marketing website.
 
-                    <p>The branding was built from scratch using Adobe Illustrator for the logo and color palette, and
-                        Adobe Photoshop for promotional banners.</p>
+                        Every element of the brand was created from the ground up — from the logo and color system to
+                        mascot concepts and packaging direction.
+                        The creative direction was inspired by childhood imagination and science-fiction themes, giving
+                        each flavor its own personality and collectible character design.
+
+                        In addition to the branding and website development, I also created 3D bottle concepts in Cinema
+                        4D.
+                        These models were used to produce promotional renders and a short brand video, combining motion,
+                        lighting, and animation to showcase the new visual direction.
+
+                        This project combines branding, 3D design, motion, and front-end development into one cohesive
+                        system.
+                    </p>
+
+                    <p>
+                        The logo and visual identity were designed in Adobe Illustrator.
+                        Promotional graphics and compositions were created in Adobe Photoshop.
+                        3D bottle models and visual assets were built and rendered in Cinema 4D.
+                        The promotional video was edited and assembled using Adobe Premiere Pro.
+                        The website itself was developed using HTML, CSS, and JavaScript with a structured grid system
+                        and responsive layout.
+                    </p>
                 </div>
 
                 <div class="col-span-full">
@@ -136,6 +151,22 @@
                         </div>
                     </div>
 
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
+                    <div class="col-span-full">
+                        <h2 class="subsection-title">Software & Technologies</h2>
+                    </div>
+
+                    <div class="col-span-full project-goal-text">
+                        <p><strong>Branding & Design:</strong> Adobe Illustrator, Adobe Photoshop</p>
+                        <p><strong>UI Planning & Layout:</strong> Figma (wireframing and layout structure)</p>
+                        <p><strong>3D & Motion:</strong> Cinema 4D, Adobe Premiere Pro</p>
+                        <p><strong>Development:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Structure:</strong> Responsive grid-based layout system</p>
+                    </div>
+
                     <div class="project-info-row">
                         <div class="project-info-label">Industry</div>
                         <div class="project-info-text">
@@ -146,6 +177,39 @@
                             <p>Web Development</p>
                         </div>
                     </div>
+
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
+                    <div class="col-span-full">
+                        <h2 class="subsection-title">Challenges</h2>
+                    </div>
+
+                    <div class="col-span-full project-goal-text">
+                        <p>
+                            One of the main challenges was maintaining consistency between the 2D branding and the 3D
+                            bottle models.
+                            Translating flat illustrations into dimensional objects required careful attention to
+                            proportion, lighting, and material settings.
+                        </p>
+
+                        <p>
+                            Another challenge was balancing playful visual design with clean website usability.
+                            The layout had to remain visually bold while still maintaining readability and responsive
+                            behavior across devices.
+                        </p>
+
+                        <p>
+                            Integrating visual storytelling through both motion graphics and web design required
+                            thoughtful coordination between design and development stages.
+                        </p>
+                    </div>
+
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
 
                     <div class="project-info-row">
                         <div class="project-info-label">Date</div>
@@ -161,7 +225,7 @@
                 </div>
 
                 <div class="col-span-full">
-                    <h3 class="subsection-title">Main Goal Of The Website</h3>
+                    <h2 class="subsection-title">Main Goal Of The Website</h2>
                 </div>
 
                 <div class="col-span-full project-goal-text">
@@ -207,14 +271,6 @@
             </div>
         </section>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <script src="js/animations.js"></script>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>

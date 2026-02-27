@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 3 - Michael Kirs</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
@@ -23,10 +30,10 @@
             <nav class="col-span-4 m-col-span-4 l-col-span-4 desktop-nav">
                 <h2 class="hidden">desktop-nav</h2>
                 <ul class="main-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="theprojects.html">The Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">The Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
 
@@ -50,10 +57,10 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="theprojects.html">The Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">The Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
 
@@ -100,18 +107,37 @@
                 </div>
 
                 <div class="col-span-8 m-col-span-8 l-col-span-8 project-about-text">
-                    <p>I was tasked with creating a fully functional music mixer that allows users to drag and drop
-                        sounds into target zones and play music using JavaScript.
-                        The concept was to design a vibrant, party-themed page featuring a DJ panel and a speaker
-                        to simulate a clubbing atmosphere. During the process, I was divided into two roles.
-                        I was responsible for the design, creating an original background, speaker, and DJ panel,
-                        as well as writing the HTML and CSS. Also handled the JavaScript functionality.
-                        I also wrote our original song to the music mixer. Drag the sounds, drop them into the DJ panel
-                        and enjoy your party!
+                    <p>
+                        This project is an interactive <strong>music mixer</strong> built from scratch as a team
+                        assignment.
+                        The goal was to create a drag-and-drop experience where users can place sounds into target zones
+                        and build a track
+                        directly in the browser.
                     </p>
 
-                    <p>The design elements were built from scratch using Adobe Illustrator for the logo and color
-                        palette.</p>
+                    <p>
+                        We designed the project around a vibrant, party-themed concept with a DJ panel and speaker
+                        visuals to simulate a
+                        club atmosphere. In the team workflow, I focused on the design side (original background,
+                        speaker, DJ panel) and I
+                        also built the HTML and CSS structure. Chris Macwan handled the main JavaScript functionality
+                        that powers the mixer
+                        interaction.
+                    </p>
+
+                    <p>
+                        To make the mixer feel complete, I also created an original song specifically for this build.
+                        The final result is a
+                        simple interactive experience: drag the sounds, drop them into the DJ panel, press play, and the
+                        page turns into a
+                        mini “party” demo.
+                    </p>
+
+                    <p>
+                        The visual direction was developed from scratch, with design elements created in Adobe
+                        Illustrator (logo and palette)
+                        and then applied consistently across the layout.
+                    </p>
                 </div>
 
                 <div class="col-span-full">
@@ -141,6 +167,55 @@
                         </div>
                     </div>
 
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
+                    <div class="col-span-full">
+                        <h2 class="subsection-title">Software & Technologies</h2>
+                    </div>
+
+                    <div class="col-span-full project-goal-text">
+                        <p><strong>Design:</strong> Adobe Illustrator</p>
+                        <p><strong>UI Layout:</strong> Figma</p>
+                        <p><strong>Development:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Interaction:</strong> Drag-and-drop based sound placement</p>
+                        <p><strong>Music:</strong> Ableton Live 11</p>
+                        <p><strong>Version Control:</strong> Git + GitHub</p>
+                    </div>
+
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
+                    <div class="col-span-full">
+                        <h2 class="subsection-title">Challenges</h2>
+                    </div>
+
+                    <div class="col-span-full project-goal-text">
+                        <p>
+                            One challenge was keeping the drag-and-drop interaction clear for the user, so it feels
+                            obvious where sounds can
+                            be placed and how to build the mix.
+                        </p>
+
+                        <p>
+                            Another challenge was aligning the visuals with the functionality, so the DJ panel design
+                            matches the logic of
+                            the drop zones and still looks clean on different screen sizes.
+                        </p>
+
+                        <p>
+                            Audio balancing was also important, because multiple sounds playing together can get messy
+                            if the volumes and
+                            timing are not handled carefully.
+                        </p>
+                    </div>
+
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
                     <div class="project-info-row">
                         <div class="project-info-label">Date</div>
                         <div class="project-info-text">
@@ -155,12 +230,18 @@
                 </div>
 
                 <div class="col-span-full">
-                    <h3 class="subsection-title">Main Goal Of The Website</h3>
+                    <h2 class="subsection-title">Main Goal Of The Website</h2>
                 </div>
 
                 <div class="col-span-full project-goal-text">
-                    <p>The main goal of the website was to create a visually appealing and user-friendly online presence
-                        that attracts new customers and showcases the Music Mixer!</p>
+                    <p>
+                        The main goal of this website was to create a fun and easy-to-use music mixer where users can
+                        build a track by
+                        dragging sounds into the DJ panel. The page needed to feel like a complete experience: strong
+                        visuals, clear
+                        interaction, and a layout that works well across screen sizes. Also practicing the team-work and
+                        JavaScript.
+                    </p>
                 </div>
 
                 <div class="col-span-full">
@@ -202,14 +283,6 @@
             </div>
         </section>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <script src="js/animations.js"></script>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>
