@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 2 - Michael Kirs</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
@@ -23,10 +30,10 @@
             <nav class="col-span-4 m-col-span-4 l-col-span-4 desktop-nav">
                 <h2 class="hidden">desktop-nav</h2>
                 <ul class="main-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="theprojects.html">The Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">The Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
 
@@ -50,10 +57,10 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="theprojects.html">The Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">The Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
 
@@ -100,17 +107,31 @@
                 </div>
 
                 <div class="col-span-8 m-col-span-8 l-col-span-8 project-about-text">
-                    <p>This project is a promotional site for my redesigned version of Squeezit — a brand I brought back
-                        in 2025 with a new alien-inspired theme.
-                        Squeezit used to be something totally different, but turned it into something completly
-                        diffirent.
-                        Now it’s a line of futuristic earbuds that look like alien tech and deliver “out-of-this-world”
-                        sound.
-                        The website is meant to show off the design, interactivity, and animation side of the project
-                        and also be a promotional material.</p>
+                    <p>
+                        This project is a promotional website for my redesigned version of <strong>Squeezit</strong> — a
+                        brand I revived
+                        in 2025 and rebuilt with a new alien-inspired direction.
+                        The entire concept was developed from scratch, from the product idea and visual style to the
+                        final responsive
+                        website layout.
+                        In my version, Squeezit becomes a line of futuristic earbuds that feel like alien technology and
+                        deliver
+                        “out-of-this-world” sound.
+                        The site is meant to present the product as a believable launch and highlight the design,
+                        interactivity, and
+                        animation side of the project.
+                    </p>
 
-                    <p>The branding was built from scratch using Adobe Illustrator for the logo and color palette, and
-                        Adobe Photoshop for promotional banners. The model was made in Cinema 4d</p>
+                    <p>
+                        I created the branding and promotional visuals from the ground up, including the logo and color
+                        system.
+                        I also modeled the earbuds in <strong>Cinema 4D</strong> to support the product look with
+                        realistic lighting and
+                        angles.
+                        Wireframing and layout planning were done in <strong>Figma</strong>, and the website was
+                        developed using
+                        <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.
+                    </p>
                 </div>
 
                 <div class="col-span-full">
@@ -141,6 +162,57 @@
                         </div>
                     </div>
 
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
+                    <div class="col-span-full">
+                        <h2 class="subsection-title">Software & Technologies</h2>
+                    </div>
+
+                    <div class="col-span-full project-goal-text">
+                        <p><strong>Branding & Design:</strong> Adobe Illustrator, Adobe Photoshop</p>
+                        <p><strong>UI Planning & Layout:</strong> Figma</p>
+                        <p><strong>3D:</strong> Cinema 4D</p>
+                        <p><strong>Development:</strong> HTML, CSS, JavaScript</p>
+                        <p><strong>Animation:</strong> GreenSock (GSAP + ScrollTrigger)</p>
+                        <p><strong>Version Control:</strong> Git + GitHub</p>
+                    </div>
+
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
+                    <div class="col-span-full">
+                        <h2 class="subsection-title">Challenges</h2>
+                    </div>
+
+                    <div class="col-span-full project-goal-text">
+                        <p>
+                            One challenge was keeping the alien-inspired style bold while still maintaining clean layout
+                            and readable
+                            typography.
+                            I had to balance strong visuals with usability so the page still feels clear and
+                            professional.
+                        </p>
+
+                        <p>
+                            Another challenge was making the 3D model presentation feel consistent with the 2D UI and
+                            branding, so the
+                            product looks like one complete system instead of separate pieces.
+                        </p>
+
+                        <p>
+                            Responsiveness was also important for spacing and image scaling, especially on smaller
+                            screens, so the experience
+                            stays consistent across devices.
+                        </p>
+                    </div>
+
+                    <div class="col-span-full">
+                        <hr class="line-separator">
+                    </div>
+
                     <div class="project-info-row">
                         <div class="project-info-label">Date</div>
                         <div class="project-info-text">
@@ -155,12 +227,18 @@
                 </div>
 
                 <div class="col-span-full">
-                    <h3 class="subsection-title">Main Goal Of The Website</h3>
+                    <h2 class="subsection-title">Main Goal Of The Website</h2>
                 </div>
 
                 <div class="col-span-full project-goal-text">
-                    <p>The main goal of the website was to create a visually appealing and user-friendly online presence
-                        that attracts new customers and showcases the new Earbuds!</p>
+                    <p>
+                        The main goal of the website was to present the earbuds as a designed product with a strong
+                        identity and a clean
+                        promotional layout.
+                        The page needed to feel like a real product launch, with responsive structure, clear visuals,
+                        and interactive
+                        elements that support the concept.
+                    </p>
                 </div>
 
                 <div class="col-span-full">
@@ -202,14 +280,6 @@
             </div>
         </section>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-    <script src="js/animations.js"></script>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>
