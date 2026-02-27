@@ -4,12 +4,8 @@ export function ContactForm() {
   const contactEmailInput = document.querySelector("#email");
   const contactMessageInput = document.querySelector("#message");
 
-  function handleContactFormSubmit(event) {
-    event.preventDefault();
+  function handleContactFormSubmit() {
 
-    if (!contactNameInput || !contactEmailInput || !contactMessageInput) {
-      return;
-    }
 
     const nameValue = contactNameInput.value.trim();
     const emailValue = contactEmailInput.value.trim();
@@ -20,11 +16,6 @@ export function ContactForm() {
       alert("Please fill in all fields before sending your message.");
       return;
     }
-
-    // I used an alert here because I don’t have a backend
-    alert("Thanks, " + nameValue + "! I got your message.");
-
-    contactForm.reset();
   }
 
   if (contactForm) {
