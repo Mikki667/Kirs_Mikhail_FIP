@@ -1,7 +1,5 @@
 <?php
 
-die("PROCESS FILE IS RUNNING");
-
 require_once "connect.php";
 
 function cleanValue($value) {
@@ -11,7 +9,7 @@ function cleanValue($value) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-  header("Location: ../contact.php");
+  header("Location: ../index.php#contact");
   exit;
 }
 
@@ -32,12 +30,12 @@ if (isset($_POST["message"])) {
 }
 
 if ($name === "" || $email === "" || $message === "") {
-  header("Location: ../contact.php?status=empty");
+  header("Location: ../index.php?status=empty#contact");
   exit;
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  header("Location: ../contact.php?status=bademail");
+  header("Location: ../index.php?status=bademail#contact");
   exit;
 }
 
@@ -66,5 +64,5 @@ $headers = "From: {$email}";
 
 mail($to, $subject, $body, $headers);
 
-header("Location: ../contact.php?status=success");
+header("Location: ../index.php?status=success#contact");
 exit;
