@@ -30,20 +30,22 @@
             <nav class="col-span-4 m-col-span-4 l-col-span-4 desktop-nav">
                 <h2 class="hidden">desktop-nav</h2>
                 <ul class="main-nav">
-                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.php#home">Home</a></li>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#projects">The Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
 
+            <!-- Social media links will be added after project evaluation. -->
+            
             <div class="col-span-4 m-col-span-4 l-col-span-4">
                 <div class="header-icons">
                     <h2 class="hidden">header-icons</h2>
                     <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
                     <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
                     <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-                    <a href="#"><img src="images/github.png" alt="GitHub"></a>
+                    <a href="https://github.com/Mikki667"><img src="images/github.png" alt="GitHub"></a>
                 </div>
             </div>
 
@@ -58,7 +60,7 @@
 
         <nav>
             <ul>
-                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.php#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">The Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
@@ -73,7 +75,7 @@
                 <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
                 <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
                 <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
-                <a href="https://github.com/"><img src="images/github.png" alt="GitHub"></a>
+                <a href="https://github.com/Mikki667"><img src="images/github.png" alt="GitHub"></a>
             </div>
         </div>
     </div>
@@ -376,6 +378,7 @@
         <div id="contact" class="contact-content">
             <h2 class="hidden">Contact form!</h2>
             <?php
+                // I check if a status was passed in the URL after form submission.
                 if (isset($_GET["status"])) 
                     {
                         if ($_GET["status"] === "success") {
@@ -426,7 +429,7 @@
                     <a href="#"><img src="images/linkedin.png" class="social-icon" alt="LinkedIn"></a>
                     <a href="#"><img src="images/instagram.png" class="social-icon" alt="Instagram"></a>
                     <a href="#"><img src="images/youtube.png" class="social-icon" alt="YouTube"></a>
-                    <a href="https://github.com/"><img src="images/github.png" class="social-icon" alt="GitHub"></a>
+                    <a href="https://github.com/Mikki667/Kirs_Mikhail_FIP"><img src="images/github.png" class="social-icon" alt="GitHub"></a>
                 </div>
             </div>
 
@@ -458,7 +461,7 @@
                 <a href="#"><img src="images/linkedin.png" class="footer-icon"></a>
                 <a href="#"><img src="images/instagram.png" class="footer-icon"></a>
                 <a href="#"><img src="images/youtube.png" class="footer-icon"></a>
-                <a href="https://github.com/"><img src="images/github.png" class="footer-icon"></a>
+                <a href="https://github.com/Mikki667"><img src="images/github.png" class="footer-icon"></a>
             </div>
 
         </section>
